@@ -31,6 +31,14 @@ impl Game for Simplest {
         self.gfx.ctx.set_fill_color("red");
         self.gfx.ctx.fill_rect(50, 50, 50, 50);
     }
+
+    fn key_down(&mut self, key_code: u32){
+      ...
+    }
+
+    fn run(&mut self, delta: f64){
+      ...
+    }
 }
 
 #[no_mangle]

@@ -1,0 +1,21 @@
+[package]
+name = "rangoon"
+version = "0.0.0"
+authors = ["Richard Anaya"]
+edition = "2018"
+description = "A simple game engine for WebAssembly"
+license = "MIT OR Apache-2.0"
+categories = ["wasm"]
+repository = "https://github.com/richardanaya/rangoon"
+readme="README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+web = "0"
+hecs = "0.3.1"
+
+[dependencies.lazy_static]
+version = "1.4.0"
+default-features = false
+features = ["spin_no_std"]

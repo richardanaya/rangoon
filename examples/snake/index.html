@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HyperPixel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <style>
+        body,
+        html {
+            margin: 0px;
+            overflow: hidden;
+            background: black;
+            height: 100%;
+            text-align: center;
+        }
+
+        #screen {
+            height: 100%;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -webkit-crisp-edges;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        @media screen and (max-aspect-ratio:160/144) {
+            #screen {
+                height: auto;
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0%, -50%);
+                -ms-transform: translate(0%, -50%);
+                -webkit-transform: translate(0%, -50%);
+            }
+        }
+    </style>
+    <script src="https://unpkg.com/js-wasm/js-wasm.js"></script>
+</head>
+
+<body>
+    <canvas id="screen" width=500 height=500></canvas>
+</body>
+
+<script type="application/wasm" src="example.wasm"></script>
+
+</html>

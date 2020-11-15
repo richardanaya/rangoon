@@ -35,6 +35,10 @@ impl Game for Simplest {
     fn key_down(&mut self, key_code: u32){
       ...
     }
+    
+    fn key_up(&mut self, key_code: u32){
+      ...
+    }
 
     fn mouse_down(&mut self, x: u32, y: u32){
       ...

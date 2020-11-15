@@ -34,6 +34,6 @@ pub trait Game {
         });
         request_animation_loop(|delta| Self::instance().run(delta));
     }
-    fn key_down(&mut self, key_code: u32);
-    fn run(&mut self, delta: f64);
+    fn key_down(&mut self, _key_code: u32){}
+    fn run(&mut self, _delta: f64){}
 }

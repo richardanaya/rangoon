@@ -36,7 +36,15 @@ impl Game for Simplest {
       ...
     }
 
-    fn run(&mut self, delta: f64){
+    fn mouse_down(&mut self, x: u32, y: u32){
+      ...
+    }
+    
+    fn mouse_up(&mut self, x: u32, y: u32){
+      ...
+    }
+    
+    fn mouse_move(&mut self, x: u32, y: u32){
       ...
     }
 }
